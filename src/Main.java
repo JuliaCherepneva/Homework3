@@ -32,6 +32,7 @@ public class Main {
         System.out.println("int" + " " + "six" + " " + "=" + " " + six);
         byte seven = 67;
         System.out.println("byte" + " " + "seven" + " " + "=" + " " + seven);
+        System.out.println(" ");
 
         System.out.println("Задание 3");
         byte teacherLp = 23;
@@ -41,9 +42,26 @@ public class Main {
         int totalStudents = teacherLp + teacherAs + teacherEa;
         int paper = totalPaper / totalStudents;
         System.out.println("На каждого ученика рассчитано" + " " + paper + " " + "листов бумаги.");
+        System.out.println(" ");
 
         System.out.println("Задание 4");
+        byte machinePerformanceIn2Minutes = 16;
+        byte minutesInOneHour = 60;
+        byte hoursInOneDay = 24;
+        byte daysInOneMonth = 30;
+        int minutesInOneDay = minutesInOneHour * hoursInOneDay;
+        int machinePerformanceIn1Minutes = machinePerformanceIn2Minutes / 2;
+        int machinePerformanceIn20Minutes = machinePerformanceIn1Minutes * 20;
+        System.out.println("За 20 минут машина произвела" + " " + machinePerformanceIn20Minutes + " " + "штук бутылок");
+        int machinePerformanceIn1day = machinePerformanceIn1Minutes * minutesInOneDay;
+        System.out.println("За сутки машина произвела" + " " + machinePerformanceIn1day + " " + "штук бутылок");
+        int ThreeDays = machinePerformanceIn1day * 3;
+        System.out.println("За 3 дня машина произвела" + " " + ThreeDays + " " + "штук бутылок");
+        int oneMonth = machinePerformanceIn1day * daysInOneMonth;
+        System.out.println("За месяц машина произвела" + " " + oneMonth + " " + "штук бутылок");
+        System.out.println(" ");
 
+        System.out.println("Задание 5");
 
     }
 }
