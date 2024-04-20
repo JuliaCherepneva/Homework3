@@ -70,7 +70,8 @@ public class Main {
         // Cчитаем сколько нужно белой и коричневой краски
         int white1 = white * totalClass;
         int brown1 = brown * totalClass;
-        System.out.println("В школе, где" + " " + totalClass + " " + "классов, нужно" + " " + white1 + " " + "банок белой краски и" + " " + brown1 + " " + "банок коричневой краски");
+        System.out.println("В школе, где" + " " + totalClass + " " + "классов, нужно" + " " + white1 + " "
+                + "банок белой краски и" + " " + brown1 + " " + "банок коричневой краски");
         System.out.println(" ");
 
         System.out.println("Задание 6");
@@ -81,5 +82,39 @@ public class Main {
         double totalGram = bananaInGrams + milkInGram + iceCreamInGram + eggInGram;
         double totalKg = totalGram / 1000;
         System.out.println("Завтрак состовляет" + " " + totalGram + " " + "г." + " " + "или" + " " + totalKg + " " + "кг.");
+
+        System.out.println("\nЗадание 7");
+        int wightInKg = 7;
+        int wightInGram = wightInKg * 1000;
+        int min = 250;
+        int max = 500;
+        int minDay = wightInGram / min;
+        int maxDay = wightInGram / max;
+        System.out.println("Если спортсмен будет сбрасывать по 250 г. в день, то похудеет через" + " " + minDay + " " + "дней.");
+        System.out.println("Если спортсмен будет сбрасывать по 500 г. в день, то похудеет через" + " " + maxDay + " " + "дней.");
+        int meanDay = minDay + maxDay / 2;
+        System.out.println("Чтобы добиться результата похудения спортсмену в среднем понадобится" + " " + meanDay + " " + "дней.");
+
+        System.out.println("\nЗадание 8");
+        int salaryMasha = 67_760;
+        int salaryDenis = 83_690;
+        int salaryKris = 76_230;
+
+        int YearSalaryMasha = salaryMasha * 12;
+        int YearSalaryDenis = salaryDenis * 12;
+        int YearSalaryKris = salaryKris * 12;
+
+        double newSalaryMasha = salaryMasha * 1.10;
+        double newSalaryDenis = salaryDenis * 1.10;
+        double newSalaryKris = salaryKris * 1.10;
+
+        double newYearSalaryMasha = newSalaryMasha * 12;
+        double newYearSalaryDenis = newSalaryDenis * 12;
+        double newYearSalaryKris = newSalaryKris * 12;
+
+        System.out.println("Маша теперь получает " + (int) newSalaryMasha + " рублей. Годовой доход вырос на " + (int) (newYearSalaryMasha - YearSalaryMasha) + " рублей.");
+        System.out.println("Денис теперь получает " + (int) newSalaryDenis + " рублей. Годовой доход вырос на " + (int) (newYearSalaryDenis - YearSalaryDenis) + " рублей.");
+        System.out.println("Кристина теперь получает " + (int) newSalaryKris + " рублей. Годовой доход вырос на " + (int) (newYearSalaryKris - YearSalaryKris) + " рублей.");
+
     }
 }
